@@ -74,7 +74,9 @@
 
     <table border="1">
         <caption>This is Student Table</caption>
-        <tr><th colspan="3">My Student Table</th></tr>
+        <tr>
+            <th colspan="3">My Student Table</th>
+        </tr>
         <tr>
             <th>Name</th>
             <th>Age</th>
@@ -101,10 +103,10 @@
     </table>
     <p>Charater Entity Reference Tags below</p>
 
-    <form action="/submit.php" method="post">        
+    <form action="/submit.php" method="post">
         Email : <input type="text" placeholder="Email" name="name" required>
         <br>
-        password : <input type="password" placeholder="password" name="password" required>   
+        password : <input type="password" placeholder="password" name="password" required>
         <br>
         <!-- better way -->
         <label for="username">Username :</label>
@@ -112,9 +114,9 @@
         <br>
         <label for="date">Enter Date :</label>
         <input type="date" id="date" name="userDate">
-        <br>        
+        <br>
         <label for="file">Upload Files :</label>
-        <input type="file" name="userFilePath" id="file">   
+        <input type="file" name="userFilePath" id="file">
         <br>
         <label for="color">Choose color :</label>
         <input type="color" id="color" name="userColor">
@@ -124,25 +126,45 @@
         <br>
         <input type="button" name="" value="Button click me!!" id="">
         <br>
-        <label for="gender">Select Gender : </label> 
+        <label for="gender">Select Gender : </label>
         <br>
-         <!--name should be same for single select for the radio button  -->
-        <label for="male">male</label>        
+        <!--name should be same for single select for the radio button  -->
+        <label for="male">male</label>
         <input type="radio" name="userGender" id="male" value="male">
-        <label for="female">female</label> 
+        <label for="female">female</label>
         <input type="radio" name="userGender" id="female" value="female">
-        <label for="other">other</label> 
+        <label for="other">other</label>
         <input type="radio" name="userGender" id="other" value="other">
         <br>
-        <label for="checkBox">choose option2</label>
-        <input type="checkbox" name="" id="checkBox">
-        <input type="submit"> 
+        <label for="apple">Apple</label>
+        <input type="checkbox" name="fruit" id="apple">
+        <label for="banana">Banana</label>
+        <input type="checkbox" name="fruit" id="banana">
+        <label for="mango">Mango</label>
+        <input type="checkbox" name="fruit" id="mango">
+
+        <br>
+        <label for="fruits">Select Fruit</label>
+        <select name="fruits" id="fruits">
+            <option value="apple">Apple</option>
+            <option value="orange" selected>Orange</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+        </select>
+        <br>
+        <label for="area">Fill the feedback</label>
+        <textarea rows="4" cols="10" name="data" id="area">Default Text is here !!!</textarea>
+        <br>
+        <input type="submit">
     </form>
 
-    <pre>       
+    <pre>
         <big>exmaples:  block elements : <b> div, p, h1 to h6, and ul, table ,section, ol, form,footer, div etc..</b></big>
         <big>examples: inline elements : <b> span, a, strong, img, em, button, sup, sub , select, label, br, big, small, textArea, pre etc..</b></big>
     </pre>
+
+    <iframe src="https://programiz.pro" width="300" height="200" frameborder="0"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw?si=mRlam1Xe0rieSeR6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 
 </html>
