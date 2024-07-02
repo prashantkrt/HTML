@@ -22,6 +22,8 @@
   position: relative;
   top: 100px;
   left: 200px;  
+  z-index: 4;
+  /* higher z index value box appears on top */
 }
 
 #box3 {
@@ -29,8 +31,10 @@
   top: 100px;
   left: 200px; 
 }
+
 #box4 {
   position: fixed;
-  top: 300px;
+  top: 200px;
   left: 200px; 
+  z-index: 2;
 }
