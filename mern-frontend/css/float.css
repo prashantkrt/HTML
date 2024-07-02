@@ -20,10 +20,12 @@
   border-radius: 10px;
 }
 
-#box1 {
-  float: right;
+#box1{
+   float: right;
 }
 
-#box2 {
-  float: none;
+#box2{
+
+    float: none;
+   
 }
