@@ -65,4 +65,10 @@
 
 #box3{
   align-self: center;
+  flex-grow: 3;
+  /* if space bigger then 3x bigger grow */
+}
+#box2{
+  flex-shrink: 2;
+  /* 2x times other boxs */
 }
