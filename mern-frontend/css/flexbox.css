@@ -8,20 +8,51 @@
   border: 2px solid black;
   height: 300px;
   border-radius: 10px;
-  align-items: center; 
-  display: flex;
-  flex-direction: row;
-  /* row ,row-reverse, column, column-reverse */
   margin: 10px;
   padding: 10px;
+
+  display: flex;
+
+  flex-direction: row;
+  /* row ,row-reverse, column, column-reverse */
+
   justify-content: space-evenly;
+  /* horizontally works */
   /* flex-start, flex-end, center, space-between, space-around(all will leave space individually), space-evenly */
+  /* main axis  of the flexbox*/
+
   flex-wrap: wrap;
   /* nowrap(default),wrap ,wrap-reverse */
+
+  align-items: start; 
+  /* align-content is for multi line flexible boxes. It has no effect when items are in a single line.
+   It aligns the whole structure according to its value.  */
+
+  /* cross-axis of the flexbox */
+  /* 
+  stretch (default): Stretches items to fill the container.
+  flex-start or start: Aligns items to the start of the cross axis.
+  flex-end or end: Aligns items to the end of the cross axis.
+  center: Aligns items to the center of the cross axis.
+  baseline: Aligns items such that their baselines align.
+   */
+
+  /* align-content: flex-end; */
+  /* for multiple rows */
+  /* vertically works */
+  /* cross-axis same as justify-content(for main axis)*/
+  /* 
+    stretch (default): Stretches lines to fill the container.
+    flex-start or start: Packs lines toward the start of the cross axis.
+    flex-end or end: Packs lines toward the end of the cross axis.
+    center: Packs lines toward the center of the cross axis.
+    space-between: Distributes lines evenly with the first line at the start and the last line at the end.
+    space-around: Distributes lines evenly with equal space around them.
+    space-evenly: Distributes lines evenly with equal space between them. 
+    */  
 }
 
 .box {
-  align-content: center;
   text-align: center;
   background-color: tomato;
   border: 2px solid black;
@@ -30,4 +61,8 @@
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
+}
+
+#box3{
+  align-self: center;
 }
