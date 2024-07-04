@@ -21,7 +21,7 @@
   /* flex-start, flex-end, center, space-between, space-around(all will leave space individually), space-evenly */
   /* main axis  of the flexbox*/
 
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   /* nowrap(default),wrap ,wrap-reverse */
 
   align-items: start; 
@@ -65,10 +65,23 @@
 
 #box3{
   align-self: center;
-  flex-grow: 3;
+  flex-grow: 4;
   /* if space bigger then 3x bigger grow */
+  order: 2;
+  /* higer order will go to the end */
 }
 #box2{
   flex-shrink: 2;
-  /* 2x times other boxs */
+  /* reduces size 2x times than other boxs */
+  order: 3;
+}
+#box1{
+  order:1
+}
+#box4{
+  order:4
+}
+
+#box5{
+  order:5
 }
