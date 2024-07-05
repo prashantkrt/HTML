@@ -1,0 +1,34 @@
+div{
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.container{
+    background-color: aqua;
+    overflow: visible;
+}
+.visible{
+    background-color: tomato;
+    overflow: visible;
+}
+
+.hidden{
+    background-color: rgb(135, 92, 175);
+    overflow: hidden;
+}
+
+.scroll{
+    background-color: bisque;
+    overflow: scroll;
+}
+
+.auto{
+    background-color: rgb(104, 98, 98);
+    overflow: auto;
+    /* if height and width not define it will automatically increase  */
+}

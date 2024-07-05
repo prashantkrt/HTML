@@ -1,0 +1,44 @@
+[type]{
+    /* Basic Match [attribute] */
+    margin: 10px;
+}
+
+[placeholder]{   
+     /* Basic Match [attribute] */
+    background-color: tomato;
+}
+
+
+[type="text"]{
+    /* Exact Match [Attribute="value" */   
+    background-color: aquamarine;
+}
+ 
+.container p {
+    /* Descendent selector*/  
+     /*applies for all the para inside container class */
+    /* color: rebeccapurple; */
+}
+
+.container > p {
+    /* all the immediate childrens not child of clild*/
+    /* color: rgb(157, 49, 54); */
+}
+
+
+/* Sibling or same level selectors */
+h2+p{
+    /* just after h2 tagets the para which comes first */
+    /* adjacrent sibling */
+    /* color: blue; */
+}
+
+
+h2~p{
+    /* general sibling */
+    /* h1 ke baad sare para me */
+    text-decoration: line-through;
+}
+
+
+

@@ -1,0 +1,33 @@
+a{
+    text-decoration: none;
+    color: red;
+    font-size: 100px;
+}
+
+input{
+    font-size: 50px;
+    width: 400px;
+    height: 50px;
+    background-color: rgb(141, 217, 19);
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
+
+a:hover{
+    /* when we hover over the link */
+    color: greenyellow;
+}
+
+a:active{
+    /* when click */
+    color: aqua;
+}
+
+input:focus{
+    /* focus inside the  */
+    background-color: black;
+}
+
