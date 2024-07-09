@@ -14,7 +14,7 @@ div {
   animation-timing-function: ease-in-out;
   animation-delay: 0.2s;
   animation-iteration-count: infinite;
-  animation-direction:alternate-reverse;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes myAnimation {
@@ -24,11 +24,25 @@ div {
     transition: background-color 0s ease 1s;
     background-color: blueviolet;
   }
-  
+
   to {
     transform: rotate(360deg);
     font-size: 60px;
     transition: background-color 0s ease 1s;
     background-color: rgb(61, 21, 98);
+  }
+}
+
+@keyframes myAnimation2 {
+  0% {
+    left: 100px;
+  }
+
+  50% {
+    left: 200px;
+  }
+
+  100% {
+    left: 400px;
   }
 }
