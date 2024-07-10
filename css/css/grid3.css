@@ -1,0 +1,46 @@
+.container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px 200px;
+    border: 2px solid black;
+    gap: 2px;
+    /* if new item added will be added in row of 100px */
+    grid-auto-columns: 100px;
+    grid-auto-rows: 100px;
+
+    /* extra items will go to column */
+    /* it sets which will be used like in rows aor colums */
+    grid-auto-flow: column; 
+}
+
+.grid-item{
+    background-color: black;
+    color: white;
+    text-align: center;  
+    border: 2px solid tomato;  
+}
+
+#box2{
+    /* grid-column-start: 2;
+    grid-column-end: -1; */
+    grid-column: 2/-1;
+    /* grid-column: start index /span size length ; */
+}
+
+#box1{
+    /* grid-row-start: 1;
+    grid-row-end: -1; */
+    grid-row: 1/-2;
+}
+#box3{
+    /* grid-column: 2/-1;
+    grid-row: 2/-2;
+
+    grid-area: rowstart/colstart/rowend/colend */
+    grid-area: 2/2/-2/-1;
+}
+
+#box4{
+    grid-column: 1/-1;   
+}
