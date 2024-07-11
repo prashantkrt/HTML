@@ -11,6 +11,7 @@
   /* horizontally center  in respect to the column */
   justify-items: center;
   /* 
+   rows diff
   space-around
   space-between
   space-evenly
@@ -19,6 +20,7 @@
   /* vertically  center  in respect to the row*/
   align-items: center;
   /* 
+  col diff
   space-around
   space-between
   space-evenly
