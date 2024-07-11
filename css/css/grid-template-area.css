@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    /* inline-grid */
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit,1fr);
+    background-color: rgb(144, 65, 65);
+    grid-template-areas: 
+    "top top top"
+    "main main item"
+    "footer footer footer";
+    height: 100vh;
+    width: 100%;
+    gap: 10px;
+}
+
+.header{
+    grid-area: top;
+    background-color: rgb(138, 245, 62);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.sidebar{
+   grid-area: main;
+   background-color: blueviolet;
+   text-align: center;
+   color: white;
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+.shoes{
+    grid-area: item;
+    background-color: rgb(190, 7, 246);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+

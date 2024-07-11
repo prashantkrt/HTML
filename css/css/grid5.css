@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  background-color: aqua;
+  border: 2px solid black;
+  gap: 2px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-item {
+  background-color: aquamarine;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  font-size: 2rem;
+}
